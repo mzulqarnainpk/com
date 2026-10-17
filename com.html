@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zyphora Growth — B2B Lead Generation & Sales Development Agency</title>
+    <meta name="description" content="Zyphora Growth helps international B2B companies identify ideal prospects, connect with key decision-makers, and build qualified sales pipelines.">
+    <meta name="keywords" content="B2B Lead Generation, Sales Development Representative, Business Development, Cold Email Outreach, LinkedIn Growth, CRM Management">
+    <meta name="author" content="Muhammad Zulqarnain">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Zyphora Growth — Premium B2B Lead Generation">
+    <meta property="og:description" content="Turn the right connections into real business growth with targeted outreach and sales development.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ==========================================================================
+           DESIGN SYSTEM TOKENS & STYLES
+           ========================================================================== */
+        :root {
+            --bg-main: #FAF8F2;
+            --bg-secondary: #F1EDE3;
+            --bg-card: #FFFFFF;
+            --text-primary: #20251F;
+            --text-secondary: #6B7068;
+            --accent-sage: #71845B;
+            --accent-sage-dark: #5a6b48;
+            --accent-sage-light: #EBF0E6;
+            --bg-dark: #20251F;
+            --text-light: #FAF8F2;
+            --border-color: #E5E0D5;
+            --border-radius-sm: 8px;
+            --border-radius-md: 12px;
+            --border-radius-lg: 20px;
+            --box-shadow: 0 10px 30px -5px rgba(32, 37, 31, 0.05);
+            --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            --max-width: 1240px;
+        }
+
+        /* Base Resets */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Manrope', sans-serif;
+            color: var(--text-primary);
+            line-height: 1.25;
+            font-weight: 700;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        button, input, select, textarea {
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section {
+            padding: 5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 3.5rem 0;
+            }
+        }
+
+        /* Buttons & Badges */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.85rem 1.75rem;
+            border-radius: var(--border-radius-sm);
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-sage);
+            color: #FFFFFF;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-sage-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(113, 132, 91, 0.25);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--text-primary);
+            border-color: var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--bg-secondary);
+            border-color: var(--text-primary);
+        }
+
+        .btn-dark {
+            background-color: var(--bg-dark);
+            color: var(--bg-main);
+        }
+
+        .btn-dark:hover {
+            background-color: #333a32;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.35rem 0.85rem;
+            background-color: var(--accent-sage-light);
+            color: var(--accent-sage-dark);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* System Header Navigation */
+        .header {
+            position: sticky;
+            top: 0;
+            background-color: rgba(250, 248, 242, 0.92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+            padding: 1.25rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .logo span {
+            color: var(--accent-sage);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            position: relative;
+            padding: 0.25rem 0;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--text-primary);
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent-sage);
+            border-radius: 2px;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            cursor: pointer;
+        }
+
+        /* Mobile Drawer */
+        .mobile-drawer {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 360px;
+            height: 100vh;
+            background-color: var(--bg-main);
+            box-shadow: -5px 0 25px rgba(0,0,0,0.1);
+            z-index: 1001;
+            padding: 2.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            transition: right 0.4s ease;
+        }
+
+        .mobile-drawer.active {
+            right: 0;
+        }
+
+        .mobile-drawer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            list-style: none;
+        }
+
+        .drawer-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(32, 37, 31, 0.4);
+            z-index: 1000;
+            display: none;
+        }
+
+        .drawer-overlay.active {
+            display: block;
+        }
+
+        /* Section Components & Layouts */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-md);
+            padding: 2rem;
+            transition: var(--transition);
+            box-shadow: var(--box-shadow);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-sage);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3.5rem auto;
+        }
+
+        .section-header h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Hero Styling */
+        .hero {
+            padding: 4rem 0 6rem 0;
+            background: linear-gradient(180deg, var(--bg-main) 0%, var(--bg-secondary) 100%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero-title {
+            font-size: 3.25rem;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 90%;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-features-list {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+        }
+
+        .hero-features-list item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pipeline-graphic {
+            width: 100%;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-lg);
+            padding: 1.5rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+        }
+
+        /* Process Steps */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            position: relative;
+        }
+
+        .step-card {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: var(--border-radius-md);
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .step-number {
+            font-size: 2.5rem;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            color: var(--accent-sage);
+            opacity: 0.4;
+            margin-bottom: 1rem;
+        }
+
+        /* Dark CTA Section */
+        .dark-cta-section {
+            background-color: var(--bg-dark);
+            color: var(--bg-main);
+            border-radius: var(--border-radius-lg);
+            padding: 4rem 2rem;
+            text-align: center;
+            margin: 4rem auto;
+        }
+
+        .dark-cta-section h2 {
+            color: #FFFFFF;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .dark-cta-section p {
+            color: #A0A59D;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 4rem 0 2rem 0;
+            margin-top: auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr repeat(3, 1fr);
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand p {
+            color: var(--text-secondary);
+            margin: 1rem 0;
+            max-width: 320px;
+            font-size: 0.95rem;
+        }
+
+        .footer-col h4 {
+            font-size: 1.05rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        /* Page View Switching system for single-file artifact multi-page experience */
+        .page-view {
+            display: none;
+        }
+
+        .page-view.active-page {
+            display: block;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Form Controls */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-sm);
+            background-color: #FFFFFF;
+            color: var(--text-primary);
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-sage);
+            box-shadow: 0 0 0 3px rgba(113, 132, 91, 0.15);
+        }
+
+        /* Filters */
+        .filter-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            cursor: pointer;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background-color: var(--accent-sage);
+            color: #FFFFFF;
+            border-color: var(--accent-sage);
+        }
+
+        /* Modal styling */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(32, 37, 31, 0.6);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            padding: 1.5rem;
+        }
+
+        .modal-content {
+            background-color: var(--bg-main);
+            border-radius: var(--border-radius-md);
+            max-width: 650px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            padding: 2.5rem;
+            position: relative;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.25rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-secondary);
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            .grid-4, .process-steps { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .grid-2, .grid-3, .grid-4, .process-steps { grid-template-columns: 1fr; }
+            .hero-title { font-size: 2.25rem; }
+            .nav-links { display: none; }
+            .mobile-toggle { display: block; }
+            .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SHARED NAVIGATION HEADER -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo nav-route" data-page="home">
+                <i class="fa-solid fa-chart-line" style="color: var(--accent-sage)"></i>
+                Zyphora<span>Growth</span>
+            </a>
+
+            <!-- Desktop Links -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link nav-route active" data-page="home">Home</a></li>
+                <li><a href="team.html" class="nav-link nav-route" data-page="team">Team</a></li>
+                <li><a href="services.html" class="nav-link nav-route" data-page="services">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link nav-route" data-page="portfolio">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link nav-route" data-page="contact">Contact Us</a></li>
+            </ul>
+
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="contact.html" class="btn btn-primary nav-route" data-page="contact" style="display: none; display: md-inline-flex;">Book a Consultation</a>
+                <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Mobile Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="mobile-drawer-header">
+            <span class="logo">Zyphora<span>Growth</span></span>
+            <button id="closeDrawerBtn" style="background:none; border:none; font-size:1.5rem; cursor:pointer;"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="nav-route mobile-nav-item" data-page="home">Home</a></li>
+            <li><a href="team.html" class="nav-route mobile-nav-item" data-page="team">Team</a></li>
+            <li><a href="services.html" class="nav-route mobile-nav-item" data-page="services">Services</a></li>
+            <li><a href="portfolio.html" class="nav-route mobile-nav-item" data-page="portfolio">Portfolio</a></li>
+            <li><a href="contact.html" class="nav-route mobile-nav-item" data-page="contact">Contact Us</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary nav-route" data-page="contact" style="margin-top:auto; text-align:center;">Book a Consultation</a>
+    </div>
+
+    <!-- MAIN CONTENT CONTAINER WITH SEPARATE HTML PAGE VIEWS -->
+    <main id="mainContent" style="flex: 1;">
+
+        <!-- ===================================================================
+             PAGE 1: HOME PAGE (index.html)
+             =================================================================== -->
+        <section id="page-home" class="page-view active-page">
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container grid-2">
+                    <div>
+                        <span class="badge"><i class="fa-solid fa-bullseye"></i> International B2B Growth</span>
+                        <h1 class="hero-title">Turn the Right Connections Into Real Business Growth.</h1>
+                        <p class="hero-subtitle">Zyphora Growth helps businesses identify ideal prospects, connect with international decision-makers, and develop qualified sales pipelines through strategic lead generation, sales development, and targeted outreach.</p>
+                        <div class="hero-actions">
+                            <a href="services.html" class="btn btn-primary nav-route" data-page="services">Explore Our Services <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="contact.html" class="btn btn-secondary nav-route" data-page="contact">Let's Talk</a>
+                        </div>
+                        <div class="hero-features-list">
+                            <span><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Research-driven</span>
+                            <span><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Personalized</span>
+                            <span><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Measurable Progress</span>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- Vector SVG Sales Pipeline Illustration -->
+                        <div class="pipeline-graphic">
+                            <svg viewBox="0 0 500 380" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto;">
+                                <rect width="500" height="380" rx="16" fill="#FAF8F2"/>
+                                <!-- Top Bar -->
+                                <rect x="20" y="20" width="460" height="40" rx="8" fill="#FFFFFF" stroke="#E5E0D5"/>
+                                <circle cx="45" cy="40" r="6" fill="#71845B"/>
+                                <circle cx="65" cy="40" r="6" fill="#E5E0D5"/>
+                                <circle cx="85" cy="40" r="6" fill="#E5E0D5"/>
+                                <rect x="340" y="32" width="120" height="16" rx="4" fill="#F1EDE3"/>
+                                
+                                <!-- Pipeline Cards Column 1 -->
+                                <rect x="20" y="80" width="140" height="280" rx="10" fill="#FFFFFF" stroke="#E5E0D5"/>
+                                <text x="35" y="105" font-family="Inter" font-size="12" font-weight="700" fill="#20251F">Prospects (140)</text>
+                                <rect x="30" y="120" width="120" height="60" rx="6" fill="#FAF8F2" stroke="#E5E0D5"/>
+                                <rect x="40" y="132" width="80" height="8" rx="2" fill="#20251F"/>
+                                <rect x="40" y="148" width="60" height="6" rx="2" fill="#6B7068"/>
+                                <rect x="30" y="190" width="120" height="60" rx="6" fill="#FAF8F2" stroke="#E5E0D5"/>
+                                <rect x="40" y="202" width="70" height="8" rx="2" fill="#20251F"/>
+                                <rect x="40" y="218" width="50" height="6" rx="2" fill="#6B7068"/>
+
+                                <!-- Pipeline Cards Column 2 -->
+                                <rect x="180" y="80" width="140" height="280" rx="10" fill="#FFFFFF" stroke="#E5E0D5"/>
+                                <text x="195" y="105" font-family="Inter" font-size="12" font-weight="700" fill="#20251F">Outreach (42)</text>
+                                <rect x="190" y="120" width="120" height="60" rx="6" fill="#EBF0E6" stroke="#71845B"/>
+                                <rect x="200" y="132" width="85" height="8" rx="2" fill="#20251F"/>
+                                <rect x="200" y="148" width="65" height="6" rx="2" fill="#71845B"/>
+
+                                <!-- Pipeline Cards Column 3 -->
+                                <rect x="340" y="80" width="140" height="280" rx="10" fill="#FFFFFF" stroke="#E5E0D5"/>
+                                <text x="355" y="105" font-family="Inter" font-size="12" font-weight="700" fill="#20251F">Qualified Meetings</text>
+                                <rect x="350" y="120" width="120" height="80" rx="6" fill="#20251F"/>
+                                <rect x="360" y="135" width="75" height="8" rx="2" fill="#FAF8F2"/>
+                                <rect x="360" y="151" width="55" height="6" rx="2" fill="#A0A59D"/>
+                                <rect x="360" y="170" width="60" height="18" rx="4" fill="#71845B"/>
+                                <text x="372" y="183" font-family="Inter" font-size="9" font-weight="700" fill="#FFFFFF">Confirmed</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Zyphora Growth -->
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="badge">Value Proposition</span>
+                        <h2>Why Choose Zyphora Growth?</h2>
+                        <p>We blend deep research, personalized strategy, and disciplined execution to connect you directly with key decision-makers.</p>
+                    </div>
+
+                    <div class="grid-4">
+                        <div class="card">
+                            <i class="fa-solid fa-magnifying-glass-chart" style="font-size:2rem; color:var(--accent-sage); margin-bottom:1rem;"></i>
+                            <h3>Targeted Prospect Research</h3>
+                            <p style="color:var(--text-secondary); margin-top:0.5rem; font-size:0.95rem;">Rigorous filtering to build precision-verified account lists matching your Ideal Customer Profile (ICP).</p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-user-check" style="font-size:2rem; color:var(--accent-sage); margin-bottom:1rem;"></i>
+                            <h3>Decision-Maker Identification</h3>
+                            <p style="color:var(--text-secondary); margin-top:0.5rem; font-size:0.95rem;">Bypassing gatekeepers to locate direct emails and verified phone numbers for key C-suite leaders.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-envelope-open-text" style="font-size:2rem; color:var(--accent-sage); margin-bottom:1rem;"></i>
+                            <h3>Personalized B2B Outreach</h3>
+                            <p style="color:var(--text-secondary); margin-top:0.5rem; font-size:0.95rem;">Tailored multi-channel messaging via cold email and LinkedIn that starts meaningful conversations.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-diagram-project" style="font-size:2rem; color:var(--accent-sage); margin-bottom:1rem;"></i>
+                            <h3>Structured Sales Pipelines</h3>
+                            <p style="color:var(--text-secondary); margin-top:0.5rem; font-size:0.95rem;">Systematic organization and tracking to ensure qualified leads move seamlessly toward meeting bookings.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Preview -->
+            <section class="section" style="background-color: var(--bg-secondary);">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="badge">Capabilities</span>
+                        <h2>Our Core Services</h2>
+                        <p>Specialized outbound solutions built for modern international B2B growth.</p>
+                    </div>
+
+                    <div class="grid-3">
+                        <div class="card">
+                            <h4>B2B Lead Generation</h4>
+                            <p style="color:var(--text-secondary); margin:0.75rem 0 1.25rem 0; font-size:0.95rem;">Targeted account research and verified contact acquisition aligned with your criteria.</p>
+                            <a href="services.html" class="nav-route" data-page="services" style="font-weight:600; color:var(--accent-sage);">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="card">
+                            <h4>Sales Development (SDR)</h4>
+                            <p style="color:var(--text-secondary); margin:0.75rem 0 1.25rem 0; font-size:0.95rem;">Outsourced SDR support handling prospect research, outreach, and meeting setting.</p>
+                            <a href="services.html" class="nav-route" data-page="services" style="font-weight:600; color:var(--accent-sage);">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="card">
+                            <h4>Business Development</h4>
+                            <p style="color:var(--text-secondary); margin:0.75rem 0 1.25rem 0; font-size:0.95rem;">Strategic account expansion, industry partnership research, and deal discovery.</p>
+                            <a href="services.html" class="nav-route" data-page="services" style="font-weight:600; color:var(--accent-sage);">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="card">
+                            <h4>Cold Email Marketing</h4>
+                            <p style="color:var(--text-secondary); margin:0.75rem 0 1.25rem 0; font-size:0.95rem;">Deliverability-focused outreach campaigns crafted with highly personalized copy.</p>
+                            <a href="services.html" class="nav-route" data-page="services" style="font-weight:600; color:var(--accent-sage);">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="card">
+                            <h4>CRM Management</h4>
+                            <p style="color:var(--text-secondary); margin:0.75rem 0 1.25rem 0; font-size:0.95rem;">Database enrichment, pipeline architecture, hygiene, and follow-up tracking.</p>
+                            <a href="services.html" class="nav-route" data-page="services" style="font-weight:600; color:var(--accent-sage);">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <div class="card">
+                            <h4>LinkedIn Growth & Outreach</h4>
+                            <p style="color:var(--text-secondary); margin:0.75rem 0 1.25rem 0; font-size:0.95rem;">Profile optimization, executive positioning, and targeted Sales Navigator networking.</p>
+                            <a href="services.html" class="nav-route" data-page="services" style="font-weight:600; color:var(--accent-sage);">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Process Timeline -->
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="badge">Methodology</span>
+                        <h2>How We Work</h2>
+                        <p>A systematic 4-step framework designed to deliver predictability and quality.</p>
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="step-card">
+                            <div class="step-number">01</div>
+                            <h4>Understand Your Business</h4>
+                            <p style="color:var(--text-secondary); font-size:0.9rem; margin-top:0.5rem;">Deep dive into your offering, UVP, pricing, existing deal flow, and specific goals.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">02</div>
+                            <h4>Research Ideal Prospects</h4>
+                            <p style="color:var(--text-secondary); font-size:0.9rem; margin-top:0.5rem;">Defining your ICP, filtering company data, and identifying direct decision-makers.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">03</div>
+                            <h4>Launch Targeted Outreach</h4>
+                            <p style="color:var(--text-secondary); font-size:0.9rem; margin-top:0.5rem;">Executing personalized multi-channel sequences with warm-up and compliance practices.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">04</div>
+                            <h4>Support Pipeline Development</h4>
+                            <p style="color:var(--text-secondary); font-size:0.9rem; margin-top:0.5rem;">Handling replies, nurturing interest, and coordinating calendar appointments for your team.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- International Markets Focus -->
+            <section class="section" style="background-color: var(--bg-card); border-top:1px solid var(--border-color); border-bottom:1px solid var(--border-color);">
+                <div class="container grid-2">
+                    <div>
+                        <span class="badge">Global Footprint</span>
+                        <h2>International Markets We Support</h2>
+                        <p style="color:var(--text-secondary); margin-bottom:1.5rem;">We assist growing companies in scaling beyond their domestic borders by connecting them with key decision-makers in target geographic regions.</p>
+                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem;">
+                            <div style="display:flex; align-items:center; gap:0.5rem; font-weight:600;"><i class="fa-solid fa-globe" style="color:var(--accent-sage);"></i> United States & Canada</div>
+                            <div style="display:flex; align-items:center; gap:0.5rem; font-weight:600;"><i class="fa-solid fa-globe" style="color:var(--accent-sage);"></i> United Kingdom</div>
+                            <div style="display:flex; align-items:center; gap:0.5rem; font-weight:600;"><i class="fa-solid fa-globe" style="color:var(--accent-sage);"></i> European Union</div>
+                            <div style="display:flex; align-items:center; gap:0.5rem; font-weight:600;"><i class="fa-solid fa-globe" style="color:var(--accent-sage);"></i> GCC & Middle East</div>
+                        </div>
+                    </div>
+                    <div style="text-align:center;">
+                        <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:380px;">
+                            <circle cx="200" cy="125" r="100" stroke="#E5E0D5" stroke-width="2" stroke-dasharray="4 4"/>
+                            <circle cx="200" cy="125" r="60" stroke="#71845B" stroke-width="2"/>
+                            <circle cx="200" cy="125" r="6" fill="#20251F"/>
+                            <circle cx="150" cy="90" r="8" fill="#71845B"/>
+                            <circle cx="260" cy="110" r="8" fill="#71845B"/>
+                            <circle cx="220" cy="170" r="8" fill="#71845B"/>
+                            <path d="M200 125 L150 90 M200 125 L260 110 M200 125 L220 170" stroke="#71845B" stroke-width="1.5"/>
+                            <text x="130" y="80" font-size="10" font-family="Inter" font-weight="600">North America</text>
+                            <text x="265" y="105" font-size="10" font-family="Inter" font-weight="600">UK & Europe</text>
+                            <text x="225" y="185" font-size="10" font-family="Inter" font-weight="600">GCC Region</text>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Final Home CTA -->
+            <div class="container">
+                <div class="dark-cta-section">
+                    <h2>Ready to Build a Stronger Sales Pipeline?</h2>
+                    <p>Let's discuss how customized prospect research and targeted outreach can accelerate your company's growth.</p>
+                    <a href="contact.html" class="btn btn-primary nav-route" data-page="contact">Contact Zyphora Growth <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===================================================================
+             PAGE 2: TEAM PAGE (team.html)
+             =================================================================== -->
+        <section id="page-team" class="page-view">
+            <div class="container section">
+                <div class="section-header">
+                    <span class="badge">Leadership & Talent</span>
+                    <h1>The People Behind Your Growth</h1>
+                    <p>Dedicated B2B sales development specialists committed to precision, research, and client success.</p>
+                </div>
+
+                <!-- Founder Profile Card -->
+                <div class="card grid-2" style="margin-bottom: 4rem; padding: 2.5rem;">
+                    <div>
+                        <!-- Founder Image Placeholder with Configurable Path -->
+                        <div style="background-color:var(--bg-secondary); border-radius:var(--border-radius-md); aspect-ratio:1/1; display:flex; flex-direction:column; align-items:center; justify-content:center; border:2px dashed var(--border-color); padding:1.5rem; text-align:center;">
+                            <i class="fa-solid fa-user-tie" style="font-size:4rem; color:var(--text-secondary); margin-bottom:1rem;"></i>
+                            <span style="font-weight:600; color:var(--text-primary);">Muhammad Zulqarnain</span>
+                            <span style="font-size:0.85rem; color:var(--text-secondary); margin-top:0.25rem;">[Founder Photo Placeholder: assets/images/founder.jpg]</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="badge">Founder Profile</span>
+                        <h2>Muhammad Zulqarnain</h2>
+                        <p style="font-weight:600; color:var(--accent-sage); margin-bottom:1rem;">Founder & B2B Growth Strategist at Zyphora Growth</p>
+                        <p style="color:var(--text-secondary); margin-bottom:1.5rem;">Specializing in B2B lead generation, sales development, LinkedIn prospecting, cold email outreach, and business development. Focused on helping businesses identify qualified prospects, engage relevant decision-makers, and develop structured sales pipelines.</p>
+                        
+                        <h4 style="margin-bottom:0.75rem; font-size:1rem;">Core Expertise:</h4>
+                        <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.5rem;">
+                            <span style="background:var(--bg-secondary); padding:0.35rem 0.75rem; border-radius:4px; font-size:0.85rem; font-weight:500;">B2B Lead Generation</span>
+                            <span style="background:var(--bg-secondary); padding:0.35rem 0.75rem; border-radius:4px; font-size:0.85rem; font-weight:500;">LinkedIn Sales Navigator</span>
+                            <span style="background:var(--bg-secondary); padding:0.35rem 0.75rem; border-radius:4px; font-size:0.85rem; font-weight:500;">Decision-Maker Identification</span>
+                            <span style="background:var(--bg-secondary); padding:0.35rem 0.75rem; border-radius:4px; font-size:0.85rem; font-weight:500;">Cold Email Outreach</span>
+                            <span style="background:var(--bg-secondary); padding:0.35rem 0.75rem; border-radius:4px; font-size:0.85rem; font-weight:500;">CRM Data Enrichment</span>
+                            <span style="background:var(--bg-secondary); padding:0.35rem 0.75rem; border-radius:4px; font-size:0.85rem; font-weight:500;">Appointment Setting</span>
+                        </div>
+
+                        <!-- Configurable LinkedIn Button -->
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="founderLinkedinBtn">
+                            <i class="fa-brands fa-linkedin" style="color:#0A66C2;"></i> Connect on LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Expansion Team Section -->
+                <div style="margin-bottom: 4rem;">
+                    <h3 style="margin-bottom:1.5rem; text-align:center;">Growing Our Capability</h3>
+                    <div class="grid-3">
+                        <div class="card" style="text-align:center; background:var(--bg-secondary); border-style:dashed;">
+                            <i class="fa-solid fa-user-plus" style="font-size:2rem; color:var(--text-secondary); margin-bottom:1rem;"></i>
+                            <h4>Research Specialists</h4>
+                            <p style="color:var(--text-secondary); font-size:0.9rem; margin-top:0.5rem;">Dedicated analysts conducting account research and lead verification.</p>
+                        </div>
+                        <div class="card" style="text-align:center; background:var(--bg-secondary); border-style:dashed;">
+                            <i class="fa-solid fa-headset" style="font-size:2rem; color:var(--text-secondary); margin-bottom:1rem;"></i>
+                            <h4>SDR Execution Team</h4>
+                            <p style="color:var(--text-secondary); font-size:0.9rem; margin-top:0.5rem;">Trained reps managing multi-touch communication and response triage.</p>
+                        </div>
+                        <div class="card" style="text-align:center; background:var(--bg-secondary); border-style:dashed;">
+                            <i class="fa-solid fa-chart-line" style="font-size:2rem; color:var(--text-secondary); margin-bottom:1rem;"></i>
+                            <h4>Campaign Managers</h4>
+                            <p style="color:var(--text-secondary); font-size:0.9rem; margin-top:0.5rem;">Ensuring technical deliverability, CRM hygiene, and reporting accuracy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Working Principles -->
+                <div>
+                    <h3 style="text-align:center; margin-bottom:2rem;">Our Working Principles</h3>
+                    <div class="grid-4">
+                        <div class="card">
+                            <h4 style="color:var(--accent-sage);">Quality Over Quantity</h4>
+                            <p style="color:var(--text-secondary); font-size:0.9rem; margin-top:0.5rem;">We prioritize high-fit, accurate prospect data over mass unverified email lists.</p>
+                        </div>
+                        <div class="card">
+                            <h4 style="color:var(--accent-sage);">Research Before Outreach</h4>
+                            <p style="color:var(--text-secondary); font-size:0.9rem; margin-top:0.5rem;">Every campaign starts with a thorough understanding of the prospect's sector and pain points.</p>
+                        </div>
+                        <div class="card">
+                            <h4 style="color:var(--accent-sage);">Personalization Over Spam</h4>
+                            <p style="color:var(--text-secondary); font-size:0.9rem; margin-top:0.5rem;">We craft relevant, value-first messaging that respects the prospect's time.</p>
+                        </div>
+                        <div class="card">
+                            <h4 style="color:var(--accent-sage);">Transparency & Accountability</h4>
+                            <p style="color:var(--text-secondary); font-size:0.9rem; margin-top:0.5rem;">Clear activity logs, straightforward progress tracking, and open communication.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===================================================================
+             PAGE 3: SERVICES PAGE (services.html)
+             =================================================================== -->
+        <section id="page-services" class="page-view">
+            <div class="container section">
+                <div class="section-header">
+                    <span class="badge">Comprehensive Solutions</span>
+                    <h1>Our B2B Growth Services</h1>
+                    <p>End-to-end outbound sales development capabilities designed to connect your business with decision-makers worldwide.</p>
+                </div>
+
+                <div class="grid-2" style="align-items:stretch;">
+                    
+                    <!-- Service 1 -->
+                    <div class="card" id="service-leadgen">
+                        <span class="badge">Service 01</span>
+                        <h3>B2B Lead Generation</h3>
+                        <p style="color:var(--text-secondary); margin:0.5rem 0 1rem 0;">Precision-built prospect lists engineered around your specific criteria.</p>
+                        <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.95rem;">
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Ideal Customer Profile (ICP) research & definition</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Target company and account profiling</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Decision-maker role & title identification</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Direct business email research & real-time verification</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Lead list building and custom data enrichment</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="card" id="service-sdr">
+                        <span class="badge">Service 02</span>
+                        <h3>Sales Development Representative (SDR)</h3>
+                        <p style="color:var(--text-secondary); margin:0.5rem 0 1rem 0;">Dedicated outbound execution to fuel your sales team's calendar.</p>
+                        <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.95rem;">
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Systematic prospect research and initial engagement</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Tailored multi-touch outreach sequences</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Professional follow-up sequence execution</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Lead qualification based on your parameters</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Seamless meeting coordination with interested prospects</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="card" id="service-bizdev">
+                        <span class="badge">Service 03</span>
+                        <h3>Business Development</h3>
+                        <p style="color:var(--text-secondary); margin:0.5rem 0 1rem 0;">Uncovering strategic growth vector opportunities and market expansions.</p>
+                        <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.95rem;">
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Sector market research and expansion analysis</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> High-value target account mapping</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Strategic channel partnership prospecting</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Discovery of new commercial opportunities</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Direct outreach support and initial introductory calls</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="card" id="service-crm">
+                        <span class="badge">Service 04</span>
+                        <h3>CRM Management & Hygiene</h3>
+                        <p style="color:var(--text-secondary); margin:0.5rem 0 1rem 0;">Structuring your data foundation to prevent pipeline leakage.</p>
+                        <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.95rem;">
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Contact & company record organization</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Sales pipeline stage architecture</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Data cleansing, deduplication & enrichment</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Lead status and stage tracking setups</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Activity reporting and follow-up reminders</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="card" id="service-email">
+                        <span class="badge">Service 05</span>
+                        <h3>Cold Email Marketing</h3>
+                        <p style="color:var(--text-secondary); margin:0.5rem 0 1rem 0;">Deliverability-focused cold email campaigns built on compliance.</p>
+                        <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.95rem; margin-bottom:1rem;">
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Deep target audience research</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Value-oriented, personalized email copywriting</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Campaign infrastructure planning & warm-up</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Technical deliverability monitoring (SPF, DKIM, DMARC)</li>
+                        </ul>
+                        <div style="background-color:var(--bg-main); padding:0.75rem; border-radius:var(--border-radius-sm); font-size:0.8rem; color:var(--text-secondary); border-left:3px solid var(--accent-sage);">
+                            <strong>Compliance Note:</strong> All cold email strategies strictly adhere to standard regulations (including CAN-SPAM and GDPR guidelines), emphasizing permission, relevant business context, and opt-out accessibility.
+                        </div>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="card" id="service-linkedin">
+                        <span class="badge">Service 06</span>
+                        <h3>LinkedIn Growth & Optimization</h3>
+                        <p style="color:var(--text-secondary); margin:0.5rem 0 1rem 0;">Positioning your personal brand and company page to attract decision-makers.</p>
+                        <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.95rem; margin-bottom:1rem;">
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Profile headline & positioning optimization</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> About section and experience narrative refinements</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Company page strategic alignment</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Targeted B2B networking & interaction guidance</li>
+                        </ul>
+                        <div style="background-color:var(--bg-main); padding:0.75rem; border-radius:var(--border-radius-sm); font-size:0.8rem; color:var(--text-secondary); border-left:3px solid var(--accent-sage);">
+                            <strong>Disclaimer:</strong> We focus on organic positioning and targeted connection strategies. We do not guarantee arbitrary follower counts or fake viral metrics.
+                        </div>
+                    </div>
+
+                    <!-- Service 7 -->
+                    <div class="card" id="service-verification">
+                        <span class="badge">Service 07</span>
+                        <h3>Company Page Verification Guidance</h3>
+                        <p style="color:var(--text-secondary); margin:0.5rem 0 1rem 0;">Advisory assistance for platform organization verification.</p>
+                        <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.95rem; margin-bottom:1rem;">
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Review of platform documentation requirements</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Guidance on eligibility prerequisites and domain alignment</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Step-by-step submission checklist support</li>
+                        </ul>
+                        <div style="background-color:var(--bg-main); padding:0.75rem; border-radius:var(--border-radius-sm); font-size:0.8rem; color:var(--text-secondary); border-left:3px solid var(--accent-sage);">
+                            <strong>Advisory Notice:</strong> Verification decisions rest entirely with third-party platforms. Zyphora Growth provides administrative guidance only and never guarantees platform badges or circumvents official rules.
+                        </div>
+                    </div>
+
+                    <!-- Service 8 -->
+                    <div class="card" id="service-meetings">
+                        <span class="badge">Service 08</span>
+                        <h3>International Meeting Booking</h3>
+                        <p style="color:var(--text-secondary); margin:0.5rem 0 1rem 0;">Coordinated calendar booking for international growth targets.</p>
+                        <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.95rem;">
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Target prospect identification in chosen markets</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Strict adherence to lead qualification criteria</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Multi-time-zone calendar scheduling coordination</li>
+                            <li><i class="fa-solid fa-check" style="color:var(--accent-sage);"></i> Meeting pre-briefs and confirmation reminders</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="dark-cta-section" style="margin-top:4rem;">
+                    <h2>Discuss Your Specific Business Goals</h2>
+                    <p>Reach out today to evaluate how our outreach services can align with your growth objectives.</p>
+                    <a href="contact.html" class="btn btn-primary nav-route" data-page="contact">Schedule a Strategy Call <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===================================================================
+             PAGE 4: PORTFOLIO PAGE (portfolio.html)
+             =================================================================== -->
+        <section id="page-portfolio" class="page-view">
+            <div class="container section">
+                <div class="section-header">
+                    <span class="badge">Capabilities & Approaches</span>
+                    <h1>Research, Outreach, & Growth in Action</h1>
+                    <p>Explore our strategic methodology and sector-specific outreach strategies across key international markets.</p>
+                </div>
+
+                <!-- Portfolio Category Filter Tabs -->
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All Sectors</button>
+                    <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+                    <button class="filter-btn" data-filter="logistics">Logistics</button>
+                    <button class="filter-btn" data-filter="consulting">Consulting</button>
+                    <button class="filter-btn" data-filter="tech">IT & Software</button>
+                    <button class="filter-btn" data-filter="manufacturing">Manufacturing</button>
+                </div>
+
+                <!-- Note on Illustrative Status -->
+                <div style="background-color:var(--bg-secondary); padding:1rem; border-radius:var(--border-radius-sm); margin-bottom:2rem; text-align:center; font-size:0.9rem; color:var(--text-secondary); border:1px stroke var(--border-color);">
+                    <i class="fa-solid fa-circle-info" style="color:var(--accent-sage);"></i> <strong>Notice:</strong> Sector case studies below represent standardized strategic frameworks and illustrative execution scenarios.
+                </div>
+
+                <!-- Portfolio Cards Grid -->
+                <div class="grid-3" id="portfolioGrid">
+                    
+                    <!-- Item 1: Healthcare -->
+                    <div class="card portfolio-item" data-category="healthcare">
+                        <span class="badge">Healthcare</span>
+                        <h4>Medical & Surgical Instruments</h4>
+                        <p style="color:var(--text-secondary); font-size:0.9rem; margin:0.5rem 0 1rem 0;">Targeting procurement directors and hospital administrators in overseas markets.</p>
+                        <button class="btn btn-secondary view-details-btn" style="width:100%; font-size:0.85rem;" 
+                            data-title="Medical & Surgical Instrument Manufacturing Strategy"
+                            data-challenge="High regulation and difficult procurement gatekeepers."
+                            data-strategy="Direct C-level supply chain outreach with compliance verification packets."
+                            data-services="Lead Generation, Cold Email, SDR Outreach"
+                            data-outcomes="Identified key regional distributor networks and scheduled discovery discussions.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <!-- Item 2: Logistics -->
+                    <div class="card portfolio-item" data-category="logistics">
+                        <span class="badge">Logistics</span>
+                        <h4>Logistics & Supply Chain Solutions</h4>
+                        <p style="color:var(--text-secondary); font-size:0.9rem; margin:0.5rem 0 1rem 0;">Connecting regional freight forwarding providers with international exporters.</p>
+                        <button class="btn btn-secondary view-details-btn" style="width:100%; font-size:0.85rem;" 
+                            data-title="Logistics & Freight Services Strategy"
+                            data-challenge="Saturated market with low response to template emails."
+                            data-strategy="Custom research on cross-border shipping routes to offer specific lane rate comparisons."
+                            data-services="Business Development, LinkedIn Prospecting"
+                            data-outcomes="Higher response rates by focusing on specific geographic trade corridors.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <!-- Item 3: Consulting -->
+                    <div class="card portfolio-item" data-category="consulting">
+                        <span class="badge">Consulting</span>
+                        <h4>Professional Services & Advisory</h4>
+                        <p style="color:var(--text-secondary); font-size:0.9rem; margin:0.5rem 0 1rem 0;">Reaching Managing Directors seeking specialized management consulting.</p>
+                        <button class="btn btn-secondary view-details-btn" style="width:100%; font-size:0.85rem;" 
+                            data-title="Consulting & Advisory Strategy"
+                            data-challenge="Long sales cycles requiring high trust prior to initial call."
+                            data-strategy="Thought-leadership first outreach on LinkedIn coupled with tailored email sequences."
+                            data-services="LinkedIn Growth, SDR Prospecting"
+                            data-outcomes="Positioned leadership as trusted advisors prior to initial booking.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <!-- Item 4: IT & Software -->
+                    <div class="card portfolio-item" data-category="tech">
+                        <span class="badge">IT & Software</span>
+                        <h4>B2B SaaS & Custom Software Development</h4>
+                        <p style="color:var(--text-secondary); font-size:0.9rem; margin:0.5rem 0 1rem 0;">Engaging CTOs and Product VPs for specialized engineering teams.</p>
+                        <button class="btn btn-secondary view-details-btn" style="width:100%; font-size:0.85rem;" 
+                            data-title="Software & IT Outreach Strategy"
+                            data-challenge="Technical decision-makers filtering standard sales pitches."
+                            data-strategy="Highly technical messaging highlighting specific tech stack capabilities and case snippets."
+                            data-services="B2B Lead Generation, Cold Email"
+                            data-outcomes="Engaged tech executives around active dev expansion needs.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <!-- Item 5: Manufacturing -->
+                    <div class="card portfolio-item" data-category="manufacturing">
+                        <span class="badge">Manufacturing</span>
+                        <h4>Industrial Machinery & Components</h4>
+                        <p style="color:var(--text-secondary); font-size:0.9rem; margin:0.5rem 0 1rem 0;">Expanding distribution channels across the GCC and EU markets.</p>
+                        <button class="btn btn-secondary view-details-btn" style="width:100%; font-size:0.85rem;" 
+                            data-title="Industrial Manufacturing Strategy"
+                            data-challenge="Finding the exact localized distributor contacts."
+                            data-strategy="In-depth multi-lingual database research and account mapping."
+                            data-services="Lead Gen, International Meeting Booking"
+                            data-outcomes="Built validated lists of regional industrial suppliers.">
+                            View Details
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Verified Performance Metrics (Structured Container) -->
+                <div style="margin-top: 4rem;">
+                    <h3 style="text-align:center; margin-bottom:1.5rem;">Verified Performance Metrics Architecture</h3>
+                    <p style="text-align:center; color:var(--text-secondary); max-width:600px; margin:0 auto 2.5rem auto; font-size:0.95rem;">
+                        Our metrics dashboard updates with genuine operational data once client-validated figures are logged.
+                    </p>
+                    
+                    <div class="grid-4" id="metricsGrid">
+                        <div class="card" style="text-align:center;">
+                            <div style="font-size:2rem; font-weight:800; color:var(--accent-sage);">Validated</div>
+                            <div style="font-size:0.85rem; color:var(--text-secondary); margin-top:0.25rem;">Qualified Leads Researched</div>
+                        </div>
+                        <div class="card" style="text-align:center;">
+                            <div style="font-size:2rem; font-weight:800; color:var(--accent-sage);">Verified</div>
+                            <div style="font-size:0.85rem; color:var(--text-secondary); margin-top:0.25rem;">Key Contacts Identified</div>
+                        </div>
+                        <div class="card" style="text-align:center;">
+                            <div style="font-size:2rem; font-weight:800; color:var(--accent-sage);">Active</div>
+                            <div style="font-size:0.85rem; color:var(--text-secondary); margin-top:0.25rem;">Outreach Campaigns Supported</div>
+                        </div>
+                        <div class="card" style="text-align:center;">
+                            <div style="font-size:2rem; font-weight:800; color:var(--accent-sage);">Coordinated</div>
+                            <div style="font-size:0.85rem; color:var(--text-secondary); margin-top:0.25rem;">Meetings Scheduled</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dark-cta-section" style="margin-top:4rem;">
+                    <h2>Want a Custom Strategy for Your Industry?</h2>
+                    <p>Contact our team for a complimentary research sample tailored to your target market.</p>
+                    <a href="contact.html" class="btn btn-primary nav-route" data-page="contact">Request Sample Prospecting Plan <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ===================================================================
+             PAGE 5: CONTACT US PAGE (contact.html)
+             =================================================================== -->
+        <section id="page-contact" class="page-view">
+            <div class="container section">
+                <div class="section-header">
+                    <span class="badge">Get In Touch</span>
+                    <h1>Let's Talk About Your Growth Goals</h1>
+                    <p>Tell us about your business, target market, and sales development requirements.</p>
+                </div>
+
+                <div class="grid-2" style="align-items:start;">
+                    
+                    <!-- Direct Contact Info -->
+                    <div>
+                        <div class="card" style="margin-bottom:1.5rem;">
+                            <h3>Direct Contact Channels</h3>
+                            <p style="color:var(--text-secondary); margin:0.5rem 0 1.5rem 0; font-size:0.95rem;">Reach out directly to discuss your outbound requirements.</p>
+                            
+                            <div style="display:flex; flex-direction:column; gap:1.25rem;">
+                                <div style="display:flex; gap:1rem; align-items:center;">
+                                    <div style="width:40px; height:40px; border-radius:50%; background:var(--accent-sage-light); display:flex; align-items:center; justify-content:center; color:var(--accent-sage);"><i class="fa-solid fa-envelope"></i></div>
+                                    <div>
+                                        <span style="font-size:0.8rem; color:var(--text-secondary); display:block;">Email Inquiry</span>
+                                        <a href="mailto:zyphoragrowth@gmail.com" style="font-weight:600; color:var(--text-primary);">zyphoragrowth@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div style="display:flex; gap:1rem; align-items:center;">
+                                    <div style="width:40px; height:40px; border-radius:50%; background:var(--accent-sage-light); display:flex; align-items:center; justify-content:center; color:var(--accent-sage);"><i class="fa-brands fa-whatsapp"></i></div>
+                                    <div>
+                                        <span style="font-size:0.8rem; color:var(--text-secondary); display:block;">Phone / WhatsApp</span>
+                                        <a href="https://wa.me/92323967276" target="_blank" rel="noopener noreferrer" style="font-weight:600; color:var(--text-primary);">+92 323 967276</a>
+                                    </div>
+                                </div>
+
+                                <div style="display:flex; gap:1rem; align-items:center;">
+                                    <div style="width:40px; height:40px; border-radius:50%; background:var(--accent-sage-light); display:flex; align-items:center; justify-content:center; color:var(--accent-sage);"><i class="fa-solid fa-user"></i></div>
+                                    <div>
+                                        <span style="font-size:0.8rem; color:var(--text-secondary); display:block;">Founder</span>
+                                        <span style="font-weight:600;">Muhammad Zulqarnain</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Consultation Booking Card -->
+                        <div class="card" style="background:var(--bg-secondary);">
+                            <i class="fa-solid fa-calendar-check" style="font-size:2rem; color:var(--accent-sage); margin-bottom:0.75rem;"></i>
+                            <h4>Book a Direct Consultation</h4>
+                            <p style="color:var(--text-secondary); font-size:0.9rem; margin:0.5rem 0 1rem 0;">Prefer to schedule a direct call? Access our online scheduler directly.</p>
+                            <a href="#" id="calendlyBookingBtn" class="btn btn-primary" style="width:100%;">
+                                Open Schedule Calendar <i class="fa-solid fa-calendar"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="card">
+                        <h3 style="margin-bottom:1rem;">Send Us an Inquiry</h3>
+                        <form id="contactForm" novalidate>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" class="form-control" placeholder="e.g. Sarah Jenkins" required>
+                                <span class="error-msg" id="fullNameError" style="color:#d9534f; font-size:0.8rem; display:none;">Please enter your full name.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="workEmail">Work Email *</label>
+                                <input type="email" id="workEmail" class="form-control" placeholder="s.jenkins@company.com" required>
+                                <span class="error-msg" id="workEmailError" style="color:#d9534f; font-size:0.8rem; display:none;">Please enter a valid work email address.</span>
+                            </div>
+
+                            <div class="grid-2" style="gap:1rem;">
+                                <div class="form-group">
+                                    <label class="form-label" for="companyName">Company Name *</label>
+                                    <input type="text" id="companyName" class="form-control" placeholder="Acme Corp" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="websiteUrl">Website URL (Optional)</label>
+                                    <input type="url" id="websiteUrl" class="form-control" placeholder="https://company.com">
+                                </div>
+                            </div>
+
+                            <div class="grid-2" style="gap:1rem;">
+                                <div class="form-group">
+                                    <label class="form-label" for="serviceInterest">Service Interested In</label>
+                                    <select id="serviceInterest" class="form-control">
+                                        <option value="lead-gen">B2B Lead Generation</option>
+                                        <option value="sdr">Sales Development Rep (SDR)</option>
+                                        <option value="bizdev">Business Development</option>
+                                        <option value="cold-email">Cold Email Marketing</option>
+                                        <option value="crm">CRM Management</option>
+                                        <option value="linkedin">LinkedIn Growth</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="targetMarket">Target Market</label>
+                                    <input type="text" id="targetMarket" class="form-control" placeholder="e.g. USA, UK, GCC">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="projectRequirements">Project Requirements *</label>
+                                <textarea id="projectRequirements" class="form-control" rows="4" placeholder="Tell us about your target customer and growth objectives..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" id="submitFormBtn" style="width:100%;">
+                                Submit Inquiry <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+
+                            <!-- Submission Result Message Box -->
+                            <div id="formStatusBox" style="margin-top:1rem; padding:1rem; border-radius:var(--border-radius-sm); font-size:0.9rem; display:none;"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===================================================================
+             PAGE 6: PRIVACY POLICY PAGE (privacy-policy.html)
+             =================================================================== -->
+        <section id="page-privacy" class="page-view">
+            <div class="container section" style="max-width:800px;">
+                <h1>Privacy Policy</h1>
+                <p style="color:var(--text-secondary); margin-bottom:2rem;">Last Updated: January 2026</p>
+                <div style="display:flex; flex-direction:column; gap:1.5rem; line-height:1.7;">
+                    <h3>1. Overview</h3>
+                    <p>Zyphora Growth ("we", "our", "us") respects your privacy. This policy details how we handle information collected through our website and business interactions.</p>
+                    
+                    <h3>2. Information We Collect</h3>
+                    <p>We only collect personal information voluntarily submitted via our contact forms, direct email, or scheduling tools. This includes your name, business email address, phone number, and company details.</p>
+
+                    <h3>3. Use of Information</h3>
+                    <p>Information provided is strictly used to evaluate growth requirements, respond to inquiries, and fulfill contractual B2B lead generation services. We do not sell or trade contact data to third parties.</p>
+
+                    <h3>4. Contact Us</h3>
+                    <p>For privacy inquiries, contact us at <strong>zyphoragrowth@gmail.com</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===================================================================
+             PAGE 7: TERMS & CONDITIONS PAGE (terms.html)
+             =================================================================== -->
+        <section id="page-terms" class="page-view">
+            <div class="container section" style="max-width:800px;">
+                <h1>Terms & Conditions</h1>
+                <p style="color:var(--text-secondary); margin-bottom:2rem;">Last Updated: January 2026</p>
+                <div style="display:flex; flex-direction:column; gap:1.5rem; line-height:1.7;">
+                    <h3>1. Acceptance of Terms</h3>
+                    <p>By accessing the Zyphora Growth website, you agree to comply with these terms of service and applicable business regulations.</p>
+
+                    <h3>2. Service Provisions & Non-Guarantees</h3>
+                    <p>Zyphora Growth provides research, sales development outreach execution, and strategic advisory. Outbound campaigns rely on external market factors; specific conversion ratios or financial earnings are not guaranteed.</p>
+
+                    <h3>3. Intellectual Property</h3>
+                    <p>All brand content, original illustrations, and website copy belong exclusively to Zyphora Growth.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===================================================================
+             PAGE 8: DEPLOYMENT & CHECKLIST (deployment.html)
+             =================================================================== -->
+        <section id="page-checklist" class="page-view">
+            <div class="container section">
+                <div class="section-header">
+                    <span class="badge">Operations</span>
+                    <h1>Deployment & Setup Checklist</h1>
+                    <p>Instructions for deploying Zyphora Growth and configuring live client endpoints.</p>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card">
+                        <h3><i class="fa-solid fa-list-check" style="color:var(--accent-sage);"></i> Setup Checklist</h3>
+                        <ul style="list-style:none; display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+                            <li><input type="checkbox" id="chk1"> <label for="chk1"><strong>Founder Photo:</strong> Place real photograph at <code>assets/images/founder.jpg</code>.</label></li>
+                            <li><input type="checkbox" id="chk2"> <label for="chk2"><strong>LinkedIn URL:</strong> Replace placeholder link with true profile URL.</label></li>
+                            <li><input type="checkbox" id="chk3"> <label for="chk3"><strong>Form Endpoint:</strong> Configure Formspree or Netlify Forms action in <code>contact.js</code>.</label></li>
+                            <li><input type="checkbox" id="chk4"> <label for="chk4"><strong>Calendly Link:</strong> Set target scheduling calendar URL in configuration object.</label></li>
+                            <li><input type="checkbox" id="chk5"> <label for="chk5"><strong>Domain DNS:</strong> Point custom domain <code>zyphoragrowth.com</code> to host.</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3><i class="fa-solid fa-cloud-arrow-up" style="color:var(--accent-sage);"></i> Hosting Instructions</h3>
+                        <div style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem; font-size:0.9rem;">
+                            <p><strong>GitHub Pages:</strong> Push source to GitHub repository and enable Pages from the repository Settings menu.</p>
+                            <p><strong>Netlify:</strong> Drag and drop project directory or connect Git repository for automated continuous deployment.</p>
+                            <p><strong>Vercel:</strong> Import static repository for instant global CDN deployment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- CASE STUDY DETAILS MODAL CONTAINER -->
+    <div class="modal" id="detailsModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModalBtn">&times;</button>
+            <span class="badge" id="modalCategory">Sector Strategy</span>
+            <h2 id="modalTitle" style="margin-bottom:1rem;">Industry Details</h2>
+            
+            <div style="display:flex; flex-direction:column; gap:1rem; margin-bottom:1.5rem;">
+                <div>
+                    <strong>Challenge:</strong>
+                    <p id="modalChallenge" style="color:var(--text-secondary);"></p>
+                </div>
+                <div>
+                    <strong>Proposed Strategy:</strong>
+                    <p id="modalStrategy" style="color:var(--text-secondary);"></p>
+                </div>
+                <div>
+                    <strong>Relevant Services:</strong>
+                    <p id="modalServices" style="color:var(--accent-sage); font-weight:600;"></p>
+                </div>
+                <div>
+                    <strong>Key Learnings & Focus:</strong>
+                    <p id="modalOutcomes" style="color:var(--text-secondary);"></p>
+                </div>
+            </div>
+
+            <a href="contact.html" class="btn btn-primary nav-route" data-page="contact" onclick="closeModal()">Discuss Similar Strategy</a>
+        </div>
+    </div>
+
+    <!-- SHARED FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-brand">
+                    <a href="index.html" class="logo nav-route" data-page="home">
+                        <i class="fa-solid fa-chart-line" style="color: var(--accent-sage)"></i>
+                        Zyphora<span>Growth</span>
+                    </a>
+                    <p>International B2B growth agency specializing in targeted prospect research, sales development, and outbound pipeline expansion.</p>
+                    <div style="display:flex; gap:1.25rem; font-size:1.2rem; margin-top:1rem;">
+                        <a href="mailto:zyphoragrowth@gmail.com" aria-label="Email Us"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://wa.me/92323967276" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="nav-route" data-page="home">Home</a></li>
+                        <li><a href="team.html" class="nav-route" data-page="team">Team</a></li>
+                        <li><a href="services.html" class="nav-route" data-page="services">Services</a></li>
+                        <li><a href="portfolio.html" class="nav-route" data-page="portfolio">Portfolio</a></li>
+                        <li><a href="contact.html" class="nav-route" data-page="contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html" class="nav-route" data-page="services">Lead Generation</a></li>
+                        <li><a href="services.html" class="nav-route" data-page="services">SDR Outsourcing</a></li>
+                        <li><a href="services.html" class="nav-route" data-page="services">Cold Email Marketing</a></li>
+                        <li><a href="services.html" class="nav-route" data-page="services">LinkedIn Outreach</a></li>
+                        <li><a href="services.html" class="nav-route" data-page="services">CRM Management</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Direct Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:zyphoragrowth@gmail.com"><i class="fa-solid fa-envelope"></i> zyphoragrowth@gmail.com</a></li>
+                        <li><a href="https://wa.me/92323967276" target="_blank"><i class="fa-brands fa-whatsapp"></i> +92 323 967276</a></li>
+                        <li><span style="color:var(--text-secondary); font-size:0.9rem;">Founder: Muhammad Zulqarnain</span></li>
+                        <li><a href="checklist.html" class="nav-route" data-page="checklist" style="font-size:0.8rem; opacity:0.7;">[Setup Checklist]</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; <span id="copyrightYear"></span> Zyphora Growth. All rights reserved.
+                </div>
+                <div style="display:flex; gap:1.5rem;">
+                    <a href="privacy-policy.html" class="nav-route" data-page="privacy">Privacy Policy</a>
+                    <a href="terms.html" class="nav-route" data-page="terms">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================================================================
+         VANILLA JAVASCRIPT LOGIC
+         =================================================================== -->
+    <script>
+        /**
+         * ZYPHORA GROWTH - CLIENT CONFIGURATION OBJECT
+         */
+        const ZyphoraConfig = {
+            founderLinkedinUrl: "https://linkedin.com/in/muhammad-zulqarnain", // Configure real LinkedIn URL
+            formSubmissionEndpoint: "", // Optional: "https://formspree.io/f/YOUR_FORM_ID"
+            calendlyUrl: "https://calendly.com", // Configure real Calendly URL
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Dynamic Year Update
+            const yearSpan = document.getElementById('copyrightYear');
+            if(yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+            // 2. Mobile Menu Drawer Navigation
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+            const mobileDrawer = document.getElementById('mobileDrawer');
+            const drawerOverlay = document.getElementById('drawerOverlay');
+
+            function openDrawer() {
+                mobileDrawer.classList.add('active');
+                drawerOverlay.classList.add('active');
+            }
+
+            function closeDrawer() {
+                mobileDrawer.classList.remove('active');
+                drawerOverlay.classList.remove('active');
+            }
+
+            if(mobileMenuBtn) mobileMenuBtn.addEventListener('click', openDrawer);
+            if(closeDrawerBtn) closeDrawerBtn.addEventListener('click', closeDrawer);
+            if(drawerOverlay) drawerOverlay.addEventListener('click', closeDrawer);
+
+            // 3. Dynamic Single-Page / Multi-Page Router Handler
+            const navRoutes = document.querySelectorAll('.nav-route');
+            const pageViews = document.querySelectorAll('.page-view');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            function navigateToPage(pageId) {
+                // Hide all page views
+                pageViews.forEach(page => page.classList.remove('active-page'));
+
+                // Target page activation
+                const targetPage = document.getElementById(`page-${pageId}`);
+                if(targetPage) {
+                    targetPage.classList.add('active-page');
+                } else {
+                    document.getElementById('page-home').classList.add('active-page');
+                }
+
+                // Update navigation visual indicators
+                navLinks.forEach(link => {
+                    if(link.getAttribute('data-page') === pageId) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+
+                // Close mobile drawer if active
+                closeDrawer();
+
+                // Scroll back to top smoothly
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            navRoutes.forEach(route => {
+                route.addEventListener('click', (e) => {
+                    const pageId = route.getAttribute('data-page');
+                    if(pageId) {
+                        e.preventDefault();
+                        navigateToPage(pageId);
+                    }
+                });
+            });
+
+            // 4. Portfolio Filter Functionality
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filter = btn.getAttribute('data-filter');
+
+                    portfolioItems.forEach(item => {
+                        const category = item.getAttribute('data-category');
+                        if(filter === 'all' || category === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // 5. Portfolio Details Modal Handler
+            const modal = document.getElementById('detailsModal');
+            const closeModalBtn = document.getElementById('closeModalBtn');
+
+            document.querySelectorAll('.view-details-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.getElementById('modalTitle').textContent = btn.getAttribute('data-title');
+                    document.getElementById('modalChallenge').textContent = btn.getAttribute('data-challenge');
+                    document.getElementById('modalStrategy').textContent = btn.getAttribute('data-strategy');
+                    document.getElementById('modalServices').textContent = btn.getAttribute('data-services');
+                    document.getElementById('modalOutcomes').textContent = btn.getAttribute('data-outcomes');
+                    modal.style.display = 'flex';
+                });
+            });
+
+            window.closeModal = function() {
+                modal.style.display = 'none';
+            };
+
+            if(closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+            window.addEventListener('click', (e) => {
+                if(e.target === modal) closeModal();
+            });
+
+            // 6. Contact Form Validation and Submission Handler
+            const contactForm = document.getElementById('contactForm');
+            const statusBox = document.getElementById('formStatusBox');
+
+            if(contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+
+                    const fullName = document.getElementById('fullName').value.trim();
+                    const workEmail = document.getElementById('workEmail').value.trim();
+                    const companyName = document.getElementById('companyName').value.trim();
+                    const projectRequirements = document.getElementById('projectRequirements').value.trim();
+
+                    // Validation flags
+                    let isValid = true;
+
+                    if(!fullName) {
+                        document.getElementById('fullNameError').style.display = 'block';
+                        isValid = false;
+                    } else {
+                        document.getElementById('fullNameError').style.display = 'none';
+                    }
+
+                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if(!workEmail || !emailPattern.test(workEmail)) {
+                        document.getElementById('workEmailError').style.display = 'block';
+                        isValid = false;
+                    } else {
+                        document.getElementById('workEmailError').style.display = 'none';
+                    }
+
+                    if(!isValid) return;
+
+                    // Loading State
+                    const submitBtn = document.getElementById('submitFormBtn');
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Processing...';
+
+                    // Check if a live server endpoint is configured
+                    if(ZyphoraConfig.formSubmissionEndpoint) {
+                        fetch(ZyphoraConfig.formSubmissionEndpoint, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                name: fullName,
+                                email: workEmail,
+                                company: companyName,
+                                requirements: projectRequirements
+                            })
+                        }).then(res => {
+                            if(res.ok) {
+                                showStatus('Inquiry submitted successfully! We will contact you shortly.', 'success');
+                                contactForm.reset();
+                            } else {
+                                showStatus('Submission failed. Please email us directly at zyphoragrowth@gmail.com.', 'error');
+                            }
+                        }).catch(() => {
+                            showStatus('Network error. Please email us directly at zyphoragrowth@gmail.com.', 'error');
+                        }).finally(() => {
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = 'Submit Inquiry <i class="fa-solid fa-paper-plane"></i>';
+                        });
+                    } else {
+                        // Documented fall-back for static setup without backend endpoint
+                        setTimeout(() => {
+                            showStatus('Inquiry registered! (Note: No submission endpoint set in ZyphoraConfig. To send to inbox, add Formspree or Netlify endpoint). Direct contact: zyphoragrowth@gmail.com', 'info');
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = 'Submit Inquiry <i class="fa-solid fa-paper-plane"></i>';
+                        }, 800);
+                    }
+                });
+            }
+
+            function showStatus(msg, type) {
+                statusBox.style.display = 'block';
+                statusBox.textContent = msg;
+                if(type === 'success') {
+                    statusBox.style.backgroundColor = '#EBF0E6';
+                    statusBox.style.color = '#71845B';
+                    statusBox.style.border = '1px solid #71845B';
+                } else if(type === 'error') {
+                    statusBox.style.backgroundColor = '#FDF2F2';
+                    statusBox.style.color = '#D9534F';
+                    statusBox.style.border = '1px solid #D9534F';
+                } else {
+                    statusBox.style.backgroundColor = '#F1EDE3';
+                    statusBox.style.color = '#20251F';
+                    statusBox.style.border = '1px solid #E5E0D5';
+                }
+            }
+
+            // 7. Dynamic External Links Binding
+            const calendlyBtn = document.getElementById('calendlyBookingBtn');
+            if(calendlyBtn) {
+                calendlyBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    if(ZyphoraConfig.calendlyUrl && ZyphoraConfig.calendlyUrl !== "https://calendly.com") {
+                        window.open(ZyphoraConfig.calendlyUrl, '_blank');
+                    } else {
+                        navigateToPage('contact');
+                    }
+                });
+            }
+
+            const founderLinkedin = document.getElementById('founderLinkedinBtn');
+            if(founderLinkedin && ZyphoraConfig.founderLinkedinUrl) {
+                founderLinkedin.href = ZyphoraConfig.founderLinkedinUrl;
+            }
+        });
+    </script>
+</body>
+</html>
